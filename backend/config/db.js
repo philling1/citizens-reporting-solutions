@@ -8,6 +8,6 @@ const connectDB = async () => {
     console.log(`Error: ${error.message}`.red.underline.bold)
     process.exit(1)
   }
-}
+} 
 
 module.exports = connectDB
