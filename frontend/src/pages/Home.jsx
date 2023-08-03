@@ -5,16 +5,16 @@ function Home() {
   return (
    <>
    <section className="heading">
-    <h1>What do you need help with?</h1>
+    <h1>Citizens Reporting Solution in which one can submit an incident e.g Accident, Fighting etc</h1>
     <p>Please choose from an option below</p>
    </section>
 
    <Link to='/new-ticket' className='btn btn-reverse btn-block'>
-     <FaQuestionCircle />Create new Ticket
+     <FaQuestionCircle />Report an Incident
    </Link>
 
    <Link to='/tickets' className='btn btn-block'>
-     <FaTicketAlt />View My  Tickets
+     <FaTicketAlt />View your Incidents Reports
    </Link>
 
    </>

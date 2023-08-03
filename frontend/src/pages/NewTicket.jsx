@@ -10,7 +10,7 @@ function NewTicket() {
 
   const [name] = useState(user.name)
   const [email] = useState(user.email)
-  const [product, setProduct] = useState('iPhone')
+  const [product, setProduct] = useState('Accidents')
   const [description, setDescription] = useState('')
 
   const dispatch = useDispatch()
@@ -33,13 +33,13 @@ function NewTicket() {
     <>
     <BackButton />
       <section className="heading">
-        <h1>Create new Ticket</h1>
+        <h1>Create new Incident</h1>
         <p>Please fill out the form below</p>
       </section>
 
       <section className="form">
         <div className="form-group">
-          <label htmlFor="name">Customer Name</label>
+          <label htmlFor="name">Citizens Name</label>
           <input 
           type="text" 
           className="form-control"
@@ -47,7 +47,7 @@ function NewTicket() {
           disabled />
         </div>
         <div className="form-group">
-          <label htmlFor="email">Customer Email</label>
+          <label htmlFor="email">Citizens Email</label>
           <input 
           type="text" 
           className="form-control"
@@ -56,21 +56,23 @@ function NewTicket() {
         </div>
         <form onSubmit={onSubmit}>
           <div className="form-group">
-            <label htmlFor="product">Product</label>
+            <label htmlFor="product">Incidents</label>
             <select 
             name="product" 
             id="product" 
             value={product} 
             onChange = {(e) => setProduct(e.target.value)}
             >
-            <option value="iPhone">iPhone</option>
-            <option value="Macbook Pro">Macbook Pro</option>
-            <option value="iMac">iMac</option>
-            <option value="iPad">iPad</option>
+            <option value="Accidents">Accidents</option>
+            <option value="Fighting">Fighting</option>
+            <option value="Rioting">Rioting</option>
+            <option value="Arm Robbery">Arm Robbery</option>
+            <option value="Kidnapping">Kidnapping</option>
+            <option value="Fire Incidents">Fire Incidents</option>
             </select>
           </div>
           <div className="form-group">
-            <label htmlFor="description">Description of the issue</label>
+            <label htmlFor="description">Description of the Incidents</label>
             <textarea 
             name="description" 
             id="description" 

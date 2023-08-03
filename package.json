@@ -21,6 +21,8 @@
     "mongoose": "^6.5.2"
   },
   "devDependencies": {
-    "nodemon": "^2.0.19"
+    "copy-webpack-plugin": "^11.0.0",
+    "nodemon": "^2.0.19",
+    "@babel/plugin-proposal-private-property-in-object" : "^7.16.7"
   }
 }
